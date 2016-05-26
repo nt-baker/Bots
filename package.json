@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "author": "colin.mccarthy80501@gmail.com",
-  "description": "hbot",
+  "description": "hubot",
   "dependencies": {
-    "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
