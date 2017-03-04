@@ -1,8 +1,8 @@
 {
-  "name": "hubot",
-  "version": "0.0.0",
+  "name": "jarvis",
+  "version": "0.0.1",
   "private": true,
-  "author": "Youremailgoeshere.com",
+  "author": "ntbaker24@gmail.com",
   "description": "hubot",
   "dependencies": {
     "hubot": "^2.19.0",
