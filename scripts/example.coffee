@@ -25,12 +25,21 @@ module.exports = (robot) ->
 
    lulz = ['lol', 'rofl', 'lmao']
 
-   robot.respond /lulz/i, (res) ->
+   robot.hear /lulz/i, (res) ->
      res.send res.random lulz
 
-   robot.topic (res) ->
-     res.send "#{res.message.text}? That's a Paddlin'"
-  
+    audrey = ['AUDREY!! LOOK AT ME!',
+              'Oh, c\'mon Audrey. I look like hell. I got bags under my eyes.',
+              'That\'s busch.',
+              'What\'s that? Well if you were a man I would punch you - punch you right in the mouth.'
+            ]
+
+   robot.hear /audrey/i, (res) ->
+     res.send res.random audrey
+
+  robot.hear /hello jarvis/i, (res) ->
+    res.send "How are you? You look awfully nice today."
+
   #
   # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
   # leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
