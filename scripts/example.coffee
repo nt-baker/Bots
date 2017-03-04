@@ -28,19 +28,20 @@ module.exports = (robot) ->
    robot.hear /lulz/i, (res) ->
      res.send res.random lulz
 
-    audrey = ['AUDREY!! LOOK AT ME!',
-              'Oh, c\'mon Audrey. I look like hell. I got bags under my eyes.',
-              'That\'s busch.',
-              'What\'s that? Well if you were a man I would punch you - punch you right in the mouth.'
-            ]
+   audrey = [
+     'AUDREY!! LOOK AT ME!',
+     'Oh, c\'mon Audrey. I look like hell. I got bags under my eyes.',
+     'That\'s busch.',
+     'What\'s that? Well if you were a man I would punch you - punch you right in the mouth.'
+   ]
 
    robot.hear /audrey/i, (res) ->
      res.send res.random audrey
 
-  robot.hear /hello jarvis/i, (res) ->
+   robot.hear /hello jarvis/i, (res) ->
     res.send "How are you? You look awfully nice today."
 
-  robot.hear /chipotle/i, (res) ->
+   robot.hear /chipotle/i, (res) ->
     res.send "This burrito is delicious, but it is filling."
 
   #
