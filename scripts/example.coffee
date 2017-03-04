@@ -40,6 +40,9 @@ module.exports = (robot) ->
   robot.hear /hello jarvis/i, (res) ->
     res.send "How are you? You look awfully nice today."
 
+  robot.hear /chipotle/i, (res) ->
+    res.send "This burrito is delicious, but it is filling."
+
   #
   # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
   # leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
